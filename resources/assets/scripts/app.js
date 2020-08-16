@@ -280,7 +280,7 @@ gsap.fromTo('#mission h3', {
     scrollTrigger: {
       trigger: '#mission',
       start: "top 60%",
-      markers: true,
+      //markers: true,
     },
     autoAlpha: 1,
     y: 0,
@@ -295,7 +295,7 @@ gsap.fromTo('#block_5f2d728a4bd57 .content-container', {
   scrollTrigger: {
     trigger: '#block_5f2d728a4bd57',
     start: "top 60%",
-    markers: true,
+    //markers: true,
   },
   autoAlpha: 1,
   y: 0,
@@ -310,7 +310,7 @@ gsap.fromTo('#block_5f2d73144bd58 .content-container', {
   scrollTrigger: {
     trigger: '#block_5f2d73144bd58',
     start: "top 60%",
-    markers: true,
+    //markers: true,
   },
   autoAlpha: 1,
   y: 0,
@@ -334,7 +334,7 @@ gsap.fromTo('#block_5f2ec379fc13a .container', {
   scrollTrigger: {
     trigger: '#block_5f2ec379fc13a',
     start: "top 60%",
-    markers: true,
+    //markers: true,
   },
   autoAlpha: 1,
   y: 0,
@@ -349,7 +349,7 @@ gsap.fromTo('#path #path-text', {
   scrollTrigger: {
     trigger: '#path',
     start: "top 60%",
-    markers: true,
+    //markers: true,
   },
   autoAlpha: 1,
   y: 0,

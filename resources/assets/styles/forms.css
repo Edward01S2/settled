@@ -104,7 +104,10 @@
 
 .footer-form {
   #gform_2 {
-    @apply flex;
+    @apply flex flex-wrap;
+  }
+  .validation_error {
+    @apply w-full;
   }
   .gform_body {
     @apply flex-grow;

@@ -5,7 +5,7 @@
       <div>
         <div class="flex flex-wrap justify-center items-center">
           @foreach($companies as $comp)
-            <a class="inline-block px-3 pb-8 w-full md:w-1/3 md:px-0 md:pb-0" href="{!! $comp['url'] !!}">
+            <a class="inline-block px-3 pb-8 w-full md:w-1/3 md:px-0 md:pb-0" href="{!! $comp['url'] !!}" target="_blank">
               <img class="mx-auto w-3/4 md:w-full md:px-8 lg:px-12 xl:px-16 hover:scale-105 transform transition duration-300" src="{!! $comp['logo']['url'] !!}" alt="">
             </a>
             {{-- @dump($comp) --}}
