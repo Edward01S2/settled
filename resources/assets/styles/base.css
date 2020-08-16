@@ -1,0 +1,83 @@
+/* purgecss start ignore */
+html {
+  @apply font-chron-text overflow-y-scroll;
+  /* scroll-behavior: smooth; */
+}
+
+a {
+  @apply cursor-pointer transition duration-300 no-underline;
+}
+
+[x-cloak] { 
+  display: none; 
+}
+
+i {
+  @apply font-chron-text italic;
+}
+
+nav {
+  .nav-contact {
+    @apply block;
+    .nav-num {
+      @apply hidden;
+    }
+    .nav-text {
+      @apply px-4 py-2 border-2 border-c-gray-100 text-xs;
+      @screen lg{
+        @apply px-6 text-base;
+      }
+    }
+    &:hover, &:active, &:focus {
+      .nav-text {
+        @apply text-white bg-c-black-100 border-c-black-100;
+      }
+    }
+  }
+}
+
+#nav.active {
+  .nav-text {
+    @apply text-c-gray-100;
+  }
+  #logo-main {
+    @apply hidden;
+  }
+  #logo-alt {
+    @apply block;
+  }
+  .nav-link.active {
+    .nav-text {
+      @apply text-c-black-100;
+    }
+  }
+  .nav-contact.active {
+    .nav-text {
+      @apply bg-c-black-100 text-white border-c-black-100;
+    }
+  }
+  .nav-link {
+    .nav-text {
+      &:hover {
+        @apply;
+      }
+    }
+  }
+}
+
+footer {
+  a {
+    &:hover {
+      @apply underline;
+    }
+  }
+}
+
+.page-template-template-custom {
+  .prose {
+    h1, h2, h3, h4, h5 {
+      @apply text-c-blue-300 font-semibold;
+    }
+  }
+}
+/* purgecss end ignore */

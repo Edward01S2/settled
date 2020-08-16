@@ -1,0 +1,486 @@
+/* purgecss start ignore */
+
+.hero-slider {
+  .flickity-page-dots {
+    @apply bottom-0 mb-4;
+    .dot {
+      @apply bg-c-gray-200 h-2 w-2 border-none;
+    }
+    .dot.is-selected {
+      @apply bg-white h-3 w-3;
+    }
+  }
+}
+
+.mission-gradient {
+  background: linear-gradient(180deg, rgba(247, 247, 247, 0) 0%, #F7F7F7 100%);
+}
+
+.overlay {
+  background: rgba(47, 52, 59, 0.45);
+}
+
+.carousel-container {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.process-carousel {
+  @screen md {
+    padding-left: calc((50vw - 384px) + 1.5rem);
+  }
+  @screen lg {
+    padding-left: calc((50vw - 512px) + 2rem);
+  }
+  @screen xl {
+  padding-left: calc((50vw - 640px) + 2rem);
+  }
+  .line {
+
+  }
+  .flickity-viewport {
+    @apply overflow-visible;
+  }
+  .slide {
+    &:first-child {
+      h3 {
+        @apply pl-0;
+      }
+      .title {
+        @apply justify-start;
+      }
+      .inner-lower {
+        @screen md {
+          @apply pl-0;
+        }
+      }
+    }
+    &:last-child {
+      @apply bg-c-black-200;
+      @screen md {
+        @apply flex items-center;
+      }
+      h3 {
+        @apply hidden;
+      }
+      .circle {
+        @apply py-6 pl-0 invisible;
+        @screen lg {
+          @apply py-12;
+        }
+      }
+      .line {
+        @apply w-1/2;
+      }
+      .title {
+        @screen md {
+          @apply pb-2;
+        }
+      }
+      .inner-lower {
+        @screen md {
+          @apply w-full px-24;
+          img {
+            @apply px-8;
+          }
+        }
+      }
+    }
+  }
+  .slide.is-selected {
+    @apply bg-c-gray-300 transition duration-500;
+    h3 {
+      @apply bg-c-gray-300 transition duration-500;
+    }
+    &:last-child {
+      @apply bg-c-black-200;
+    }
+    .circle {
+      svg {
+        @apply text-c-gray-300
+      }
+    }
+  }
+  #slide-1 {
+    .title {
+      @apply justify-start ml-6;
+      @screen md {
+        @apply ml-0 justify-center;
+      }
+    }
+    h3 {
+      @apply pl-0
+    }
+    .circle {
+      svg {
+        
+      }
+    }
+    .inner-lower{
+      @screen md {
+        @apply pl-12
+      }
+      @screen lg {
+        @apply pl-24
+      }
+    }
+    .line {
+      @screen md {
+        @apply w-1/2 ml-auto;
+      }
+    }
+  }
+  #slide-2 {
+    .circle {
+      svg {
+        height: 3.75rem;
+        width: 3.75rem;
+        @screen lg {
+          height: 5.25rem;
+          width: 5.25rem;
+        }
+      }
+    }
+  }
+  #slide-3 {
+    .circle {
+      svg {
+        height: 3.25rem;
+        width: 3.25rem;
+        @screen lg {
+          height: 4.5rem;
+          width: 4.5rem;
+        }
+      }
+    }
+  }
+  #slide-4 {
+    .circle {
+      svg {
+        height: 3rem;
+        width: 3rem;
+        @screen lg {
+          height: 4rem;
+          width: 4rem;
+        }
+      }
+    }
+  }
+  #slide-5 {
+    .circle {
+      svg {
+        height: 2.75rem;
+        width: 2.75rem;
+      }
+    }
+  }
+}
+
+/* Instagram Block */
+#sb_instagram {
+  #sbi_images {
+    @apply float-none grid grid-cols-2 gap-6;
+
+    @screen md {
+      @apply grid-cols-3;
+    }
+
+    @screen lg {
+      @apply gap-8;
+    }
+
+    .sbi_item {
+      @apply w-full !important;
+    }
+  }
+}
+
+#block_5f2b0fd366dfa {
+  .item-container {
+    @screen md {
+      @apply w-3/4;
+    }
+    @screen lg {
+      @apply py-24;
+    }
+    @screen xl {
+      @apply py-32;
+    }
+    img {
+      @screen md {
+        @apply h-20;
+      }
+
+      @screen lg {
+        @apply h-24;
+      }
+    }
+  }
+}
+
+.split-video {
+  .content-container {
+    @screen lg {
+      @apply ml-0;
+      padding-left: calc(50vw - 512px);
+    }
+    @screen xl {
+      padding-left: calc(50vw - 640px);
+    }
+  }
+}
+
+.work-carousel {
+  .flickity-viewport {
+    @apply overflow-visible;
+  }
+  .slide {
+    &:first-child {
+      @apply w-11/12;
+      @screen md {
+        @apply w-1/2;
+      }
+      @screen lg {
+        @apply w-2/5;
+      }
+      @screen xl {
+        @apply w-1/3;
+      }
+      img {
+        @apply h-104;
+        @screen md {
+          @apply h-112;
+        }
+      }
+      .work-content {
+        @screen lg {
+          @apply w-1/2;
+        }
+        @screen xl {
+          @apply w-3/5;
+        }
+      }
+    }
+  }
+}
+
+.quote-carousel {
+  .flickity-page-dots {
+    @apply bottom-0 relative text-left mt-8 flex items-center;
+    @screen md {
+      @apply mt-0;
+    }
+    .dot {
+      @apply bg-c-gray-200 h-3 w-3 border-none;
+    }
+    .dot.is-selected {
+      @apply bg-transparent border border-c-black-100 h-4 w-4 border-solid;
+    }
+  }
+}
+
+#block_5f2d728a4bd57 {
+  .img-container {
+    @screen md {
+      @apply order-2;
+    }
+    img{
+      @apply pr-0;
+      @screen md {
+        @apply pl-8;
+      }
+      @screen lg {
+        @apply pl-12;
+      }
+    }
+  }
+  .container {
+    @screen md {
+      @apply order-1;
+    }
+    .content-container {
+      @screen md {
+        @apply pl-0;
+      }
+      @screen lg {
+        @apply pl-0 pr-12;
+      }
+      @screen xl {
+        @apply pr-16;
+      }
+    }
+  }
+}
+
+#block_5f2d73144bd58 {
+  .img-container {
+    img {
+      @screen md {
+        @apply pl-0 pr-8;
+      }
+      @screen lg {
+        @apply pl-0 pr-12;
+      }
+      @screen xl {
+        @apply pr-16;
+      }
+    }
+  }
+  .container {
+    .content-container {
+      @screen md {
+        @apply pr-0;
+      }
+      @screen lg {
+        @apply pl-12 pr-0;
+      }
+    }
+  }
+}
+
+#block_5f2dc8e454e1d {
+  .item-container {
+    @screen md {
+      @apply text-left pl-12 pr-6;
+    }
+    @screen lg {
+      @apply pl-16 pr-0 py-32;
+    }
+  }
+}
+
+#galleries {
+  .gallery-item {
+    &:nth-child(odd) {
+      @apply p-8;
+      @screen md {
+        @apply p-0;
+      }
+      img {
+        @apply h-96;
+        @screen md {
+          @apply h-108;
+        }
+        @screen lg {
+          @apply h-116;
+        }
+        @screen xl {
+          @apply h-120;
+        }
+      }
+    }
+    &:nth-child(4n+0), &:nth-child(4n+1) {
+      @screen md {
+        @apply p-12 flex items-center;
+      }
+      .gallery-container {
+        @screen md{
+          
+        }
+        img {
+          @screen md {
+            @apply h-96;
+          }
+          @screen lg {
+            @apply h-100;
+          }
+          @screen xl {
+            @apply h-108;
+          }
+        }
+      }
+    }
+    &:nth-child(5n+1) {
+      @screen md {
+        @apply pl-0;
+      }
+      @screen lg {
+        @apply pr-32;
+      }
+    }
+    &:nth-child(4n) {
+      @screen md {
+        @apply pr-0;
+      }
+      @screen lg {
+        @apply pl-32;
+      }
+    }
+    &:nth-child(2n) {
+      @screen md {
+        h3 {
+          @apply text-right;
+        }
+      }
+    }
+  }
+}
+
+#block_5f2ec6fc12931 {
+  .service-content {
+    ul {
+      @apply my-4;
+      & > * + * {
+        @apply mt-3;
+      }
+      li {
+        @apply flex items-start;
+        text-indent: -1rem;
+        /* list-style-image: url('../images/circle.svg'); */
+        &:before {
+          content: "";
+          @apply h-4 w-4 inline-block bg-center bg-no-repeat bg-contain mr-4 mt-1 text-c-teal-200 flex-shrink-0;
+          background-image: url('../images/circle-gray.svg');
+        }
+      }
+    }
+  }
+}
+
+#block_5f2ecdda2afd3 {
+  .service-content {
+    ul {
+      @apply my-4;
+      & > * + * {
+        @apply mt-3;
+      }
+      li {
+        @apply flex items-start;
+        text-indent: -1rem;
+        /* list-style-image: url('../images/circle.svg'); */
+        &:before {
+          content: "";
+          @apply h-4 w-4 inline-block bg-center bg-no-repeat bg-contain mr-4 mt-1 text-c-teal-200 flex-shrink-0;
+          background-image: url('../images/circle-blue.svg');
+        }
+      }
+    }
+  }
+}
+
+.service-grid {
+  .item {
+    &:last-child {
+      @apply border-b-0;
+    }
+  }
+}
+
+#block_5f2b0fd366dfa {
+  .link-text {
+    @apply hidden;
+  }
+}
+
+#mission {
+  .slide {
+    @apply overflow-hidden;
+  }
+}
+
+
+/* purgecss end ignore */
