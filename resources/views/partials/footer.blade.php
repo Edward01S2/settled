@@ -41,7 +41,7 @@
           {!! $content !!}
         </div>
 
-        <div class="text-white text-center font-brandon font-medium lg:text-sm lg:w-1/3 lg:flex lg:flex-col lg:items-end lg:justify-end xl:flex xl:justify-end xl:space-x-6">
+        <div class="text-white text-center font-brandon lg:text-sm lg:w-1/3 lg:flex lg:flex-col lg:items-end lg:justify-end xl:flex xl:justify-end xl:space-x-6">
           <div class="md:pb-4 lg:pb-0 lg:text-center">
             <span>&copy; <?php echo esc_attr( date( 'Y' ) ); ?></span>
             <span> {{ $copyright }}</span>
