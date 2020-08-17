@@ -1,4 +1,24 @@
 /* purgecss start ignore */
+@font-face {
+  font-family: 'Chronicle Display STD';
+  src: url('../fonts/ChronicleDisplay.otf');
+}
+
+@font-face {
+  font-family: 'Chronicle Text G1';
+  src: 
+    url('../fonts/ChronicleText.otf'),
+    url('../fonts/ChronicleTextG1-Italic.otf');
+}
+
+@font-face {
+  font-family: 'Brandon Text';
+  src: 
+    url('../fonts/BrandonText-Bold.otf'),
+    url('../fonts/BrandonText-Medium.otf'),
+    url('../fonts/BrandonText-Regular.otf');
+}
+
 html {
   @apply font-chron-text overflow-y-scroll;
   /* scroll-behavior: smooth; */
