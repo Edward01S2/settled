@@ -20,7 +20,7 @@
 }
 
 html {
-  @apply font-chron-text overflow-y-scroll;
+  @apply font-chronicle overflow-y-scroll;
   /* scroll-behavior: smooth; */
 }
 
@@ -33,7 +33,7 @@ a {
 }
 
 i {
-  @apply font-chron-text italic;
+  @apply font-chronicle italic;
 }
 
 nav {
