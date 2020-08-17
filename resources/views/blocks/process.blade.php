@@ -4,7 +4,7 @@
       <div class="overflow-hidden">
         <div class="title-container container mx-auto px-6 lg:px-8">
           <div class="flex items-end mb-8 lg:mb-12">
-            <h2 class="title leading-none inline-block align-bottom text-xl md:text-3xl lg:text-5xl">{!! $title !!}</h2>
+            <h2 class="title font-chronicle leading-none inline-block align-bottom text-xl md:text-3xl lg:text-5xl">{!! $title !!}</h2>
             @if($logo)
               <img class="ml-2 h-4 mb-1 md:h-7 lg:h-10 lg:ml-3 lg:mb-2" src="{!! $logo['url'] !!}" alt="">
             @endif
@@ -29,7 +29,7 @@
                 <div id="slide-{!! $loop->iteration !!}" class="slide relative min-h-full flex-shrink-0 pt-4 pb-8 ml-0 flex flex-col w-full transition duration-200 md:w-4/5 md:pb-0 md:mb-12 lg:w-2/3 xl:w-1/2">
                   <div class="inner-container">
                     <div class="title flex items-center justify-center relative">
-                      <h3 class="text-3xl inline-block bg-white px-8 py-6 relative z-40 transition duration-200 md:text-4xl lg:text-5xl lg:py-10">{!! $item['title'] !!}</h3>
+                      <h3 class="text-3xl inline-block font-chronicle bg-white px-8 py-6 relative z-40 transition duration-200 md:text-4xl lg:text-5xl lg:py-10">{!! $item['title'] !!}</h3>
                       <div class="circle z-30 -ml-1 relative">
                         <svg class="h-16 w-16 overflow-visible fill-current text-white p-1 transition duration-200 lg:h-24 lg:w-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="50" cy="50" r="50" stroke="#8e8e8e" stroke-width="1" fill="fillCurrent" />

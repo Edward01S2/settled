@@ -38,7 +38,7 @@
     
 
 html {
-  @apply font-chronicle overflow-y-scroll;
+  @apply font-chron-text overflow-y-scroll;
   /* scroll-behavior: smooth; */
 }
 

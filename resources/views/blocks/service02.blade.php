@@ -3,7 +3,7 @@
     <div class="flex flex-col md:flex-row md:space-x-12 md:space-x-reverse lg:space-x-16 lg:space-x-reverse xl:space-x-24 xl:space-x-reverse">
       <div class="md:w-1/2 md:order-2">
         <img class="h-16 mx-auto mb-4 xl:h-20" src="{!! $logo['url'] !!}" alt="">
-        <h4 class="uppercase font-brandon text-c-gray-600 text-sm text-center mb-8 lg:text-base">{!! $subtitle !!}</h4>
+        <h4 class="uppercase font-brandon tracking-wider text-c-gray-600 text-sm text-center mb-8 lg:text-base">{!! $subtitle !!}</h4>
         <div class="service-grid flex flex-wrap justify-center mb-8">
           @foreach($services as $item)
             <div class="item flex flex-col py-4 pr-6 md:pr-6 xl:pr-8">

@@ -9,7 +9,7 @@ module.exports = {
     './resources/**/*.js',
     ],
     options: {
-      whitelist: ['italic'],
+      whitelist: ['italic', 'text-c-blue-300'],
     }
   },
   theme: {

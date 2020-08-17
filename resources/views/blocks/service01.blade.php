@@ -3,7 +3,7 @@
     <div class="flex flex-col space-y-8 md:flex-row md:space-y-0 md:space-x-12 lg:space-x-16 xl:space-x-24">
       <div class="md:w-1/2">
         <img class="h-20 mx-auto mb-4 lg:h-24 xl:h-28" src="{!! $logo['url'] !!}" alt="">
-        <h4 class="uppercase font-brandon text-c-gray-600 text-sm text-center mb-8 lg:text-base">{!! $subtitle !!}</h4>
+        <h4 class="uppercase font-brandon tracking-wider text-c-gray-600 text-sm text-center mb-8 lg:text-base">{!! $subtitle !!}</h4>
         <div class="service-content lg:text-lg">
           {!! $content !!}
         </div>
