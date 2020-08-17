@@ -17,7 +17,7 @@
       </div>
 
       <div class="md:mx-24 lg:mx-40">
-        <div class="text-white font-brandon uppercase mb-4 text-center">{!! $form_title !!}</div>
+        <div class="text-white font-brandon uppercase tracking-wider mb-4 text-center">{!! $form_title !!}</div>
         <div class="footer-form lg:mx-auto lg:w-116">
           @include('partials.form', ['form' => $form])
         </div>

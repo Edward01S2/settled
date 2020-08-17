@@ -1,7 +1,7 @@
 <section>
   <div class="container mx-auto px-6 py-12 md:py-16 md:pb-32 lg:px-8">
     <div class="text-center">
-      <div class="uppercase font-brandon font-medium text-c-gray-200 mb-8 tracking-wider md:text-lg">{!! $title !!}</div>
+      <div class="uppercase font-brandon text-c-gray-200 mb-8 tracking-wider md:text-lg">{!! $title !!}</div>
       <div>
         <div class="flex flex-wrap justify-center items-center">
           @foreach($companies as $comp)

@@ -45,7 +45,7 @@
                     <div class="inner-lower px-6 md:pr-24 md:pl-12 lg:pl-32 lg:pr-40">
                       <img class="slide-image object-cover object-center w-full h-56 mb-4 md:h-56 md:mb-8 lg:h-64" src="{!! $item['image']['url'] !!}" alt="">
                       <div class="inner-flex flex-grow">
-                        <h4 class="text-c-gray-400 font-brandon font-medium text-xl mb-2 uppercase md:leading-snug md:text-2xl lg:pr-0">{!! $item['header'] !!}</h4>
+                        <h4 class="text-c-gray-400 font-brandon text-xl mb-2 uppercase md:leading-snug md:text-2xl lg:pr-0">{!! $item['header'] !!}</h4>
                         <p class="text-black text-base flex-grow">{!! $item['content'] !!}</p>
                         @if($item['logo'])
                           <img class="mx-auto mt-8" src="{!! $item['logo']['url'] !!}" alt="">

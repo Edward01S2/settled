@@ -1,7 +1,7 @@
 {
     "/scripts/manifest.js": "/scripts/manifest.js?id=7db827d654313dce4250",
     "/scripts/app.js": "/scripts/app.js?id=9eb3ee8d5b5a6de4ab62",
-    "/styles/app.css": "/styles/app.css?id=2b2f3c7b8c51cc2da9b3",
+    "/styles/app.css": "/styles/app.css?id=a865a25d8be96867ea04",
     "/scripts/customizer.js": "/scripts/customizer.js?id=48dd72865274240eba97",
     "/scripts/editor.js": "/scripts/editor.js?id=4a8c7b89a1b4cc9a8ce7",
     "/scripts/vendor.js": "/scripts/vendor.js?id=3c9a30ad790e9a0c46d5",
@@ -13,6 +13,7 @@
     "/fonts/BrandonText-Medium.otf": "/fonts/BrandonText-Medium.otf?id=4861583222705dbc67f9",
     "/fonts/BrandonText-Regular.otf": "/fonts/BrandonText-Regular.otf?id=f3a6fa148216ca8a6637",
     "/fonts/ChronicleDisplay.otf": "/fonts/ChronicleDisplay.otf?id=7a33acb9746b9d3290ed",
+    "/fonts/ChronicleDisplayLight.otf": "/fonts/ChronicleDisplayLight.otf?id=f011149fdf4310f67021",
     "/fonts/ChronicleText.otf": "/fonts/ChronicleText.otf?id=029acb5bd30a0c18a83e",
     "/fonts/ChronicleTextG1-Italic.otf": "/fonts/ChronicleTextG1-Italic.otf?id=a5fa6788fa1e104437f5"
 }

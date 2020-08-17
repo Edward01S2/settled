@@ -1,23 +1,41 @@
 /* purgecss start ignore */
 @font-face {
-  font-family: 'Chronicle Display STD';
-  src: url('../fonts/ChronicleDisplay.otf');
+  font-family: 'Chronicle Display';
+  src: url('../fonts/ChronicleDisplayLight.otf');
 }
 
 @font-face {
   font-family: 'Chronicle Text G1';
   src: 
-    url('../fonts/ChronicleText.otf'),
+    url('../fonts/ChronicleText.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Chronicle Text G1';
+  src: 
     url('../fonts/ChronicleTextG1-Italic.otf');
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
   font-family: 'Brandon Text';
   src: 
-    url('../fonts/BrandonText-Bold.otf'),
-    url('../fonts/BrandonText-Medium.otf'),
-    url('../fonts/BrandonText-Regular.otf');
+    /* url('../fonts/BrandonText-Bold.otf'), */
+    url('../fonts/BrandonText-Medium.otf');
+  font-weight: 500;
 }
+
+@font-face {
+  font-family: 'Brandon Text';
+  src: 
+    /* url('../fonts/BrandonText-Bold.otf'), */
+    url('../fonts/BrandonText-Regular.otf');
+  font-weight: 400;
+}
+
+    
 
 html {
   @apply font-chronicle overflow-y-scroll;

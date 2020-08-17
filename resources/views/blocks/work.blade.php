@@ -21,11 +21,11 @@
                   <img class="object-cover w-full h-72 mb-4 md:h-96 md:mb-8" src="{!! $item['image'] !!}" alt="">
                 </a>
                 <div class="work-content pb-12 w-3/4 md:w-4/5 md:pb-8">
-                  <div class="text-white bg-c-blue-100 inline-block px-4 uppercase font-brandon py-1 text-xs mb-4" style="background-color: {!! $item['terms']['color'] !!}">{!! $item['terms']['name'] !!}</div>
+                  <div class="text-white bg-c-blue-100 inline-block px-4 tracking-wider uppercase font-brandon py-1 text-xs mb-4" style="background-color: {!! $item['terms']['color'] !!}">{!! $item['terms']['name'] !!}</div>
                   <a href="{!! $item['url'] !!}">
                     <h4 class="text-black-100 text-xl mb-4 md:leading-snug md:text-2xl lg:pr-0 hover:opacity-50 transition duration-300">{!! $item['title'] !!}</h4>
                   </a>
-                  <a class="text-c-gray-200 uppercase font-brandon text-xs tracking-wider hover:text-c-gray-400" href="{!! $item['url'] !!}">Gallery View</a>
+                  <a class="text-c-gray-200 uppercase font-brandon font-bold text-xs tracking-widest hover:text-c-gray-400" href="{!! $item['url'] !!}">Gallery View</a>
                 </div>
               </div>
 

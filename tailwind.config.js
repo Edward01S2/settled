@@ -67,7 +67,7 @@ module.exports = {
       fontFamily: {
         'space' : ['Space Mono', 'monospace'],
         'roboto' : ['Roboto', 'roboto', 'sans-serif'],
-        'chronicle' :  ['Chronicle Display STD', 'serif'],
+        'chronicle' :  ['Chronicle Display', 'serif'],
         'chron-text' : ['Chronicle Text G1', 'serif'],
         'brandon' : ['Brandon Text', 'serif'],
       },
