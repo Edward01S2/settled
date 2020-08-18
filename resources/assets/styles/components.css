@@ -52,10 +52,49 @@
     padding-left: calc((50vw - 512px) + 2rem);
   }
   @screen xl {
-  padding-left: calc((50vw - 640px) + 2rem);
+    padding-left: calc((50vw - 640px) + 2rem);
+  }
+  .flickity-prev-next-button {
+    @apply bottom-0 top-auto rounded-none transform translate-y-0 h-auto w-auto bg-transparent mb-6;
+    @screen md {
+      @apply mb-12
+    }
+    &.previous {
+      left: 1.5rem;
+      @screen md {
+        left: 3rem;
+      }
+      @screen lg {
+        left: 8rem;
+      }
+    }
+    &.next {
+      right: 1.5rem;
+      @screen md {
+        right: 3rem;
+      }
+      @screen lg {
+        right: 8rem;
+      }
+      @screen xl {
+        right: 10rem;
+      }
+    }
+    .flickity-button-icon {
+      @apply relative inset-0 h-8 w-auto px-4 border-2 border-c-gray-100 text-c-gray-1000;
+    }
   }
   .flickity-viewport {
-    @apply overflow-visible;
+    @apply overflow-visible relative;
+  }
+  .line-left, .line-right {
+    margin-top: 2.9rem;
+    @screen md {
+      margin-top: 3.2rem;
+    }
+    @screen lg {
+      margin-top: 4.75rem;
+    }
   }
   .slide {
     &:first-child {
@@ -137,20 +176,25 @@
         @apply pl-12
       }
       @screen lg {
-        @apply pl-24
+        @apply pl-32
       }
     }
-    .line {
+    .line-left {
+      @apply hidden;
+    }
+    .line-right {
+      @apply ml-auto;
+      width: 50%;
       @screen md {
-        @apply w-1/2 ml-auto;
+        width: 40%;
       }
     }
   }
   #slide-2 {
     .circle {
       svg {
-        height: 3.75rem;
-        width: 3.75rem;
+        height: 3.4rem;
+        width: 3.4rem;
         @screen lg {
           height: 5.25rem;
           width: 5.25rem;
@@ -161,8 +205,8 @@
   #slide-3 {
     .circle {
       svg {
-        height: 3.25rem;
-        width: 3.25rem;
+        height: 3rem;
+        width: 3rem;
         @screen lg {
           height: 4.5rem;
           width: 4.5rem;
@@ -173,21 +217,32 @@
   #slide-4 {
     .circle {
       svg {
-        height: 3rem;
-        width: 3rem;
+        height: 2.65rem;
+        width: 2.65rem;
         @screen lg {
-          height: 4rem;
-          width: 4rem;
+          height: 3.8rem;
+          width: 3.8rem;
         }
+      }
+    }
+    .line-right {
+      @screen xl {
+        @apply w-2/5;
       }
     }
   }
   #slide-5 {
     .circle {
       svg {
-        height: 2.75rem;
-        width: 2.75rem;
+        height: 2.5rem;
+        width: 2.5rem;
       }
+    }
+    .line-left {
+      width: calc(50%);
+    }
+    .line-right {
+      @apply hidden;
     }
   }
 }
@@ -447,6 +502,9 @@
           content: "";
           @apply h-4 w-4 inline-block bg-center bg-no-repeat bg-contain mr-4 mt-1 text-c-teal-200 flex-shrink-0;
           background-image: url('../images/circle-gray.svg');
+          @screen xl {
+            @apply mt-2;
+          }
         }
       }
     }

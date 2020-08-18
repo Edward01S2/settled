@@ -13,14 +13,14 @@
             </div>
           @endforeach
         </div>
-        <div class="mb-8 leading-7 lg:text-lg xl:leading-9">
+        <div class="mb-8 leading-7 opacity-75 lg:text-lg xl:leading-9">
           {!! $content !!}
         </div>
       </div>
       <div class="md:w-1/2 md:order-1">
         <img class="object-cover object-center w-full h-auto mb-4 md:mb-12" src="{!! $image['url'] !!}" alt="">
         <div>
-          <div class="service-content leading-7 lg:text-lg xl:leading-9">{!! $subtext !!}</div>
+          <div class="service-content opacity-75 leading-7 lg:text-lg xl:leading-9">{!! $subtext !!}</div>
         </div>
       </div>
     </div>

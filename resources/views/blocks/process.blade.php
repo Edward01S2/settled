@@ -26,21 +26,27 @@
               {{-- <div class="line absolute border-b border-c-gray-1000 top-0 mt-18"></div> --}}
               @foreach($items as $item)
 
-                <div id="slide-{!! $loop->iteration !!}" class="slide relative flex-shrink-0 pt-4 pb-8 ml-0 flex flex-col w-full transition duration-200 md:w-4/5 md:pb-0 md:mb-12 lg:w-2/3 xl:w-1/2">
+                <div id="slide-{!! $loop->iteration !!}" class="slide relative flex-shrink-0 pt-4 pb-20 ml-0 flex flex-col w-full transition duration-200 md:w-4/5 md:mb-12 lg:w-2/3 xl:w-1/2">
                   <div class="inner-container">
                     <div class="title flex items-center justify-center relative">
                       <h3 class="text-3xl inline-block font-chronicle bg-white px-8 py-6 relative z-40 transition duration-200 md:text-4xl lg:text-5xl lg:py-10">{!! $item['title'] !!}</h3>
-                      <div class="circle z-30 -ml-1 relative">
-                        <svg class="h-16 w-16 overflow-visible fill-current text-white p-1 transition duration-200 lg:h-24 lg:w-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <div class="circle -ml-1 relative">
+                        <svg class="h-16 w-16 overflow-visible fill-current text-white p-1 transition duration-200 relative z-20 lg:h-24 lg:w-24" viewBox="-2 -2 104 104" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="50" cy="50" r="50" stroke="#8e8e8e" stroke-width="1" fill="fillCurrent" />
                         </svg>
                         @if($loop->first)
-                          <svg id="circle" class="h-16 w-16 absolute top-0 overflow-visible fill-current text-c-gray-300 p-1 lg:h-24 lg:w-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="50" stroke="#8e8e8e" stroke-width="1" fill="fillCurrent" />
-                          </svg>
+                          <div>
+                            <svg id="circle" class="h-16 w-16 absolute top-0 overflow-visible fill-current text-c-gray-300 z-40 p-1 lg:h-24 lg:w-24" viewBox="-2 -2 104 104" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="50" cy="50" r="50" stroke="#8e8e8e" stroke-width="1" fill="fillCurrent" />
+                              <circle cx="50" cy="50" r="8" stroke="#8e8e8e" stroke-width="1" fill="#8E8E8E" />
+                              <line id="circle-line-left" class="hidden text-c-gray-1000" x1="0" y1="51" x2="50" y2="51" stroke="#8E8E8E" stroke-width="1" fill="#8E8E8E"/>
+                              <line class="text-c-gray-1000" x1="50" y1="51" x2="100" y2="51" stroke="#8E8E8E" fill="#8E8E8E" stroke-width="1"/>
+                            </svg>
+                          </div>
                         @endif
                       </div>
-                      <div class="line h-px w-full left-0 right-0 absolute bg-c-gray-1000 top-0 mt-12 z-0 lg:mt-18"></div>
+                      <div class="line-left h-px w-2/5 left-0 right-0 absolute top-0 mt-12 z-10" style="background-color: #8e8e8e;"></div>
+                      <div class="line-right ml-auto h-px w-3/12 left-0 right-0 absolute top-0 mt-12 z-10 md:w-1/3" style="background-color: #8e8e8e;"></div>
                     </div>
                     <div class="inner-lower px-6 md:pr-24 md:pl-12 lg:pl-32 lg:pr-40">
                       <img class="slide-image object-cover object-center w-full h-56 mb-4 md:h-56 md:mb-8 lg:h-64" src="{!! $item['image']['url'] !!}" alt="">

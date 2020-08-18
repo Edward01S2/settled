@@ -6,7 +6,12 @@
         <div class="md:pr-12 lg:pl-8 lg:pr-16 xl:pr-24">
           <h2 class="text-c-black-100 font-chronicle text-3xl leading-tight mb-4 lg:text-5xl xl:text-6xl">{!! $title !!}</h2>
           <p class="text-c-gray-500 mb-8 leading-loose lg:text-lg xl:text-xl">{!! $content !!}</p>
-          <a class="font-chronicle font-light text-c-gray-400 border-b-2 border-c-gray-100 pb-2 text-lg hover:text-c-black-100 hover:border-c-gray-600" data-lity href="{!! $link['url'] !!}">{!! $link['title'] !!}</a>
+          <a class="font-chronicle font-light text-c-gray-400 text-lg hover:text-c-black-100 relative overflow-hidden" data-lity href="{!! $link['url'] !!}">
+            {!! $link['title'] !!}
+            <div class="overflow-hidden absolute w-full top-0 left-0 mt-4 inline-block">
+              <div id="video-link-line" class="h-2px mt-2 w-full bg-c-gray-200"></div>
+            </div>
+          </a>
         </div>
       </div>
 

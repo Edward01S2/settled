@@ -35,7 +35,7 @@ if($('#block_5f2abc83dd46a').length) {
     cellAlign: 'center',
     contain: true,
     prevNextButtons: false,
-    autoPlay: 7000,
+    autoPlay: 4000,
   });
 }
 
@@ -67,7 +67,9 @@ if($('.quote-carousel').length) {
 }
 
 $(window).smartresize(function(e){
-  flkty.resize();
+  if(flkty) {
+    flkty.resize();
+  }
 });
 
 
@@ -209,14 +211,17 @@ if($('.process-carousel').length) {
     // options
     cellAlign: 'left',
     contain: false,
-    prevNextButtons: false,
+    prevNextButtons: true,
     freeScroll: true,
     pageDots: false,
+    arrowShape: 'M1.9,47.4a2.9,2.9,0,0,0,0,4.2L20.8,70.5c2.6,2.8,6.9-1.5,4.2-4.2L8.2,49.5,25,32.7c2.7-2.7-1.5-7-4.2-4.2ZM99,46.5H4v6H99Z',
   });
 
   update();
 
 }
+
+$('.process-carousel .flickity-prev-next-button').appendTo('.flickity-viewport');
 
 function update() {
 
@@ -237,6 +242,12 @@ if(window.matchMedia("(min-width: 1024px)").matches) {
   drag.on( 'scroll', function( progress ) {
     progress = Math.max( 0, Math.min( 1, progress ) );
     //console.log(progress);
+
+    $('.process-carousel #slide-1 #circle #circle-line-left').fadeIn();
+
+    if(progress === 0) {
+      $('.process-carousel #slide-1 #circle #circle-line-left').hide();
+    }
   
     gsap.fromTo('.process-carousel #slide-1 #circle', {x: 0, scale: 1}, {
       x: circle,
@@ -248,9 +259,11 @@ if(window.matchMedia("(min-width: 1024px)").matches) {
 }
 
 $(window).smartresize(function(e){
-  drag.resize();
-  console.log('resized')
-  update();
+  if($('.process-carousel').length) {
+    drag.resize();
+    //console.log('resized')
+    update();
+  }
 });
 
 
@@ -272,6 +285,30 @@ gsap.fromTo("#hero-text", {
   autoAlpha: 1,
   duration: 3,
   delay: 0.5,
+});
+
+gsap.fromTo('.split-video #in-anim', {
+  autoAlpha: 0,
+}, {
+  scrollTrigger: {
+    trigger: '.split-video',
+    start: "top 60%",
+    //markers: true,
+  },
+  autoAlpha: 1,
+  duration: 3,
+});
+
+gsap.fromTo('.split-video #video-link-line', {
+  xPercent: -100,
+}, {
+  scrollTrigger: {
+    trigger: '.split-video h2',
+    start: "top 60%",
+    //markers: true,
+    scrub: 0.5,
+  },
+  xPercent: 0,
 });
 
 gsap.fromTo('#mission h3', {
