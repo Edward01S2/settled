@@ -1,5 +1,5 @@
 <section class="split-video">
-  <div class="container mx-auto px-6 md:max-w-none md:px-0 md:py-16 lg:py-20">
+  <div class="container mx-auto px-6 md:max-w-none md:px-0 md:py-16 md:pb-0 lg:py-20 lg:pb-8 xl:pb-24">
     <div class="flex flex-col md:flex-row">
 
       <div class="content-container py-12 text-center md:w-6/12 md:pt-0 md:px-6 md:pb-16 md:text-left md:max-w-384 md:ml-auto lg:w-5/12 lg:inline-block lg:pr-0 lg:max-w-none xl:pb-0">
@@ -16,11 +16,13 @@
       </div>
 
       <div class="relative md:w-6/12 lg:w-7/12 lg:inline-block">
-        <img class="object-cover object-left inset-0 w-full h-full" src="{!! $poster['url'] !!}" alt="">
-        <div class="absolute top-0 w-full h-full flex items-center justify-center">
-          <a data-lity href="{!! $link['url'] !!}">
-            <img class="h-16 w-16 lg:h-20 lg:w-20 transform hover:scale-125 transition duration-300" src="@asset('images/video_icon.svg')" alt="">
-          </a>
+        <div class="aspect-ratio relative">
+          <img class="object-cover object-left inset-0 w-full h-full absolute" src="{!! $poster['url'] !!}" alt="">
+          <div class="absolute top-0 w-full h-full flex items-center justify-center">
+            <a data-lity href="{!! $link['url'] !!}">
+              <img class="h-16 w-16 lg:h-20 lg:w-20 transform hover:scale-125 transition duration-300" src="@asset('images/video_icon.svg')" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
