@@ -6,7 +6,7 @@
         <a href="{!! $item['url'] !!}" class="gallery-item block group">
           <div class="gallery-container relative overflow-hidden">
             <img class="relative z-10 object-center object-cover w-full h-108 lg:h-116 xl:h-120 group-hover:scale-110 transform transition duration-500" src="{!! $item['image'] !!}" alt="">
-            <div class="absolute bottom-0 bg-c-gray-600 z-20 w-full">
+            <div class="absolute bottom-0 bg-c-gray-600 z-20 w-full opacity-90">
               <h3 class="font-brandon text-white uppercase tracking-wider p-3 md:px-6 lg:text-lg">{!! $item['title'] !!}</h3>
             </div>
           </div>

@@ -100,6 +100,7 @@ module.exports = {
       },
       opacity: {
         '31': '0.31',
+        '90': '0.9',
       },
       screens: {
       },

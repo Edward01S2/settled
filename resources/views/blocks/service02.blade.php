@@ -6,21 +6,21 @@
         <h4 class="uppercase font-brandon tracking-wider text-c-gray-600 text-sm text-center mb-8 lg:text-base">{!! $subtitle !!}</h4>
         <div class="service-grid flex flex-wrap justify-center mb-8">
           @foreach($services as $item)
-            <div class="item flex flex-col py-4 pr-6 md:pr-6 xl:pr-8">
+            <div class="item flex flex-col py-4 pr-6 md:pr-6 xl:pr-10 xl:py-8">
               {{-- <div class="h-2 w-2 transform rotate-45 mr-1" style="background-color: {!! $item['color'] !!}"></div> --}}
               <img class="h-2 w-auto mr-auto" src="{!! $main['url'] !!}" alt="">
               <div class="font-brandon uppercase font-medium xl:text-lg" style="color: {!! $item['color'] !!}">{!! $item['text'] !!}</div>
             </div>
           @endforeach
         </div>
-        <div class="mb-8 lg:text-lg">
+        <div class="mb-8 leading-7 lg:text-lg xl:leading-9">
           {!! $content !!}
         </div>
       </div>
       <div class="md:w-1/2 md:order-1">
         <img class="object-cover object-center w-full h-auto mb-4 md:mb-12" src="{!! $image['url'] !!}" alt="">
         <div>
-          <div class="service-content lg:text-lg">{!! $subtext !!}</div>
+          <div class="service-content leading-7 lg:text-lg xl:leading-9">{!! $subtext !!}</div>
         </div>
       </div>
     </div>

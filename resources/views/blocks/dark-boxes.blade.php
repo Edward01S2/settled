@@ -7,7 +7,7 @@
       @foreach($items as $item)
         @if($item['link']) <a href="{!! $item['link']['url'] !!}" class="group"> @endif
         <div class="item relative flex items-center text-center overflow-hidden {!! $item['align'] !!}">
-          <div class="item-container relative z-30 px-6 py-12 md:w-1/2 md:py-20 lg:w-1/2 lg:px-16 xl:w-5/12">
+          <div class="item-container relative z-30 px-6 py-12 md:w-1/2 md:py-20 lg:w-1/2 lg:px-16">
             @if($item['logo'])
               <img class="mx-auto h-16 mb-4 lg:mb-8 xl:h-20" src="{!! $item['logo']['url'] !!}" alt="">
             @endif

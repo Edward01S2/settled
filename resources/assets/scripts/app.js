@@ -35,6 +35,7 @@ if($('#block_5f2abc83dd46a').length) {
     cellAlign: 'center',
     contain: true,
     prevNextButtons: false,
+    autoPlay: 7000,
   });
 }
 
@@ -248,6 +249,7 @@ if(window.matchMedia("(min-width: 1024px)").matches) {
 
 $(window).smartresize(function(e){
   drag.resize();
+  console.log('resized')
   update();
 });
 

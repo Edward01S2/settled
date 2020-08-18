@@ -78,9 +78,7 @@ class Hero extends Block
     public function with()
     {
         return [
-            'title' => get_field('title'),
-            'images' => get_field('images'),
-            'color' => get_field('color'),
+            'slides' => get_field('slides')
         ];
     }
 
@@ -104,9 +102,17 @@ class Hero extends Block
         $hero = new FieldsBuilder('hero');
 
         $hero
-            ->addText('title')
-            ->addColorPicker('color')
-            ->addGallery('images');
+            // ->addText('title')
+            // ->addColorPicker('color')
+            // ->addGallery('images');
+            ->addRepeater('slides', [
+                'layout' => 'block'
+            ])
+                ->addText('title')
+                ->addColorPicker('color')
+                ->addImage('bg')
+            ->endRepeater();
+
 
         return $hero->build();
     }

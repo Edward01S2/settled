@@ -4,7 +4,7 @@
       <div class="md:w-1/2">
         <img class="h-20 mx-auto mb-4 lg:h-24 xl:h-28" src="{!! $logo['url'] !!}" alt="">
         <h4 class="uppercase font-brandon tracking-wider text-c-gray-600 text-sm text-center mb-8 lg:text-base">{!! $subtitle !!}</h4>
-        <div class="service-content lg:text-lg">
+        <div class="service-content leading-7 lg:text-lg xl:leading-9">
           {!! $content !!}
         </div>
       </div>
@@ -12,7 +12,7 @@
         <img class="object-cover object-center w-full h-auto" src="{!! $image['url'] !!}" alt="">
         <div class="py-8 md:py-16 lg:py-20 xl:max-w-md">
           <img class="h-8 mb-4" src="{!! $sublogo['url'] !!}" alt="">
-          <div>{!! $subtext !!}</div>
+          <div class="leading-7 lg:text-lg xl:leading-9">{!! $subtext !!}</div>
         </div>
       </div>
     </div>   

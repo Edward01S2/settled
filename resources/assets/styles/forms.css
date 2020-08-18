@@ -58,6 +58,9 @@
 }
 .ginput_container input[type=text], .ginput_container input[type=email], .ginput_container select, .ginput_container textarea {
   @apply w-full py-3 text-base border border-c-gray-200 px-4 text-c-black-100 font-brandon;
+  @screen lg {
+    @apply py-4;
+  }
   &::placeholder {
     @apply text-c-gray-200 tracking-wider uppercase text-xs font-brandon;
     @screen lg {

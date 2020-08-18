@@ -16,7 +16,7 @@
         {{-- <div class="color-swipe-study absolute bg-c-black-100 w-full h-full z-10 md:block"></div> --}}
         <div class="relative">
           <div class="">
-            <div class="process-carousel w-full overflow-hidden relative">
+            <div class="process-carousel w-full overflow-hidden relative flickity-resize">
               {{-- <div id="circle" class="circle p-1 z-30 absolute top-0 ml-40 mt-4 lg:ml-104">
                 <svg class="h-16 w-16 overflow-visible bg-transparent fill-current" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="50" cy="50" r="50" stroke="#8e8e8e" stroke-width="2" fill="transparent" />
@@ -26,7 +26,7 @@
               {{-- <div class="line absolute border-b border-c-gray-1000 top-0 mt-18"></div> --}}
               @foreach($items as $item)
 
-                <div id="slide-{!! $loop->iteration !!}" class="slide relative min-h-full flex-shrink-0 pt-4 pb-8 ml-0 flex flex-col w-full transition duration-200 md:w-4/5 md:pb-0 md:mb-12 lg:w-2/3 xl:w-1/2">
+                <div id="slide-{!! $loop->iteration !!}" class="slide relative flex-shrink-0 pt-4 pb-8 ml-0 flex flex-col w-full transition duration-200 md:w-4/5 md:pb-0 md:mb-12 lg:w-2/3 xl:w-1/2">
                   <div class="inner-container">
                     <div class="title flex items-center justify-center relative">
                       <h3 class="text-3xl inline-block font-chronicle bg-white px-8 py-6 relative z-40 transition duration-200 md:text-4xl lg:text-5xl lg:py-10">{!! $item['title'] !!}</h3>

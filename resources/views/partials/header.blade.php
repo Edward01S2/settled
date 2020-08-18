@@ -1,8 +1,8 @@
-<nav id="nav" x-data="{open: false}" class="bg-white w-full z-50 py-4 lg:py-8">
-  <div class="container mx-auto px-6 lg:px-8">
+<nav id="nav" x-data="{open: false}" class="bg-white w-full z-50 py-4 md:py-8 lg:py-10">
+  <div class="container mx-auto px-6 lg:px-12">
     <div class="flex justify-between items-center md:justify-between lg:justify-between">
 
-      <div class="hidden nav-container items-center md:flex md:space-x-20 lg:space-x-24 xl:space-x-32">
+      <div class="hidden nav-container items-center md:flex md:space-x-20 xl:space-x-24">
         @foreach ($navigation as $item)
           @if($loop->index <= 1)
             <a class="nav-link font-chronicle hidden leading-5 text-c-black-100 focus:outline-none group focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out hover:opacity-50 md:block lg:text-lg xl:text-xl{{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}" href="{{ $item->url }}">
@@ -15,13 +15,13 @@
       <div class="flex md:px-16 lg:px-24">
         <div class="flex-shrink-0 flex items-center">
           <a href="{{ home_url('/') }}" class="pb-2 hover:opacity-50">
-            <img id="logo-main" class="h-8 w-auto lg:h-12" src="{!! $logo['url'] !!}" alt="{{ $siteName }}" />
+            <img id="logo-main" class="h-8 w-auto md:h-10 lg:h-12 xl:h-16" src="{!! $logo['url'] !!}" alt="{{ $siteName }}" />
           </a>
           {{-- <img class="block h-12 w-auto" src="{!! $mobile_logo['url'] !!}" alt="{{ $siteName }}" /> --}}
         </div>
       </div>
 
-      <div class="hidden nav-container items-center md:flex md:space-x-20 lg:space-x-24 xl:space-x-32">
+      <div class="hidden nav-container items-center md:flex md:space-x-16 lg:space-x-20 xl:space-x-24">
         @foreach ($navigation as $item)
           @if($loop->index > 1)
             <a class="nav-link font-chronicle hidden leading-5 text-c-black-100 focus:outline-none group focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out hover:opacity-50 md:block lg:text-lg xl:text-xl {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}" href="{{ $item->url }}">
@@ -31,7 +31,7 @@
         @endforeach
       </div>
 
-      <div class="-mr-2 flex items-center sm:hidden">
+      <div class="-mr-2 flex items-center md:hidden">
         <!-- Mobile menu button -->
         <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-c-black-100 focus:outline-none transition duration-150 ease-in-out" aria-label="Main menu" aria-expanded="false">
           <!-- Icon when menu is closed. -->
@@ -52,7 +52,7 @@
 
     Menu open: "block", Menu closed: "hidden"
   -->
-  <div :class="{'block': open, 'hidden': !open }" class="bg-white sm:hidden" x-cloak>
+  <div :class="{'block': open, 'hidden': !open }" class="bg-white md:hidden" x-cloak>
     <div @click.away="open = false" class="py-4">
       <ul class="flex flex-col divide-y divide-c-gray-100 divide-opacity-50 px-6">
         @foreach ($navigation as $item)
