@@ -560,5 +560,10 @@
   }
 }
 
+#block_5f2abc83dd46a {
+  .flickity-prev-next-button {
+    @apply hidden;
+  }
+}
 
 /* purgecss end ignore */
