@@ -127,6 +127,9 @@
   .gfield {
     @apply mb-0;
   }
+  .gform_confirmation_message_2 {
+    @apply text-center text-white;
+  }
 }
 
 

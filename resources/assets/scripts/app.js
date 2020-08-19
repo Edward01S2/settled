@@ -225,28 +225,28 @@ $('.process-carousel .flickity-prev-next-button').appendTo('.flickity-viewport')
 
 let tl;
 
-const slides = document.querySelectorAll('.process-carousel .slide');
+function update() {
+
+  const slides = document.querySelectorAll('.process-carousel .slide');
 
   var sW = gsap.getProperty(slides[0], "width");
 
-  var circle = sW * slides.length - innerWidth;
+  var circle = sW * 4;
   if(window.matchMedia("(min-width: 768px)").matches) {
-    circle = sW * 4 - 64;
-    //console.log('true')
+    circle = sW * 4 - 64 - 16;
+    console.log('tablet')
   }
 
-if(window.matchMedia("(min-width: 1024px)").matches) {
-  circle = sW * 4 - 96;
-}
+  if(window.matchMedia("(min-width: 1024px)").matches) {
+    circle = sW * 4 - 96;
+  }
 
-tl = gsap.fromTo('.process-carousel #slide-1 #circle', {x: 0, scale: 1}, {
-  x: circle,
-  scale: .5,
-  ease: "linear",
-  paused: true,
-})
-
-function update() {
+  tl = gsap.fromTo('.process-carousel #slide-1 #circle', {x: 0, scale: 1}, {
+    x: circle,
+    scale: .5,
+    ease: "linear",
+    paused: true,
+  })
 
   drag.on( 'scroll', function( progress ) {
     progress = Math.max( 0, Math.min( 1, progress ) );

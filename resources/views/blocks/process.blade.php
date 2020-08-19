@@ -35,7 +35,7 @@
                           <circle cx="50" cy="50" r="50" stroke="#8e8e8e" stroke-width="1" fill="fillCurrent" />
                         </svg>
                         @if($loop->first)
-                          <div>
+                          <div class="hidden md:block">
                             <svg id="circle" class="h-16 w-16 absolute top-0 overflow-visible bg-transparent fill-current text-c-gray-300 z-20 p-1 lg:h-24 lg:w-24" viewBox="-2 -2 104 104" xmlns="http://www.w3.org/2000/svg">
                               <circle cx="50" cy="50" r="50" stroke="#8e8e8e" stroke-width="1" fill="fillCurrent" />
                               {{-- <circle cx="50" cy="50" r="8" stroke="#8e8e8e" stroke-width="1" fill="#8E8E8E" /> --}}
@@ -46,7 +46,7 @@
                         @endif
                       </div>
                       <div class="line-left h-px w-2/5 left-0 right-0 absolute top-0 mt-12 z-10" style="background-color: #8e8e8e;"></div>
-                      <div class="line-right ml-auto h-px w-3/12 left-0 right-0 absolute top-0 mt-12 z-10 md:w-1/3" style="background-color: #8e8e8e;"></div>
+                      <div class="line-right ml-auto h-px w-1/2 left-0 right-0 absolute top-0 mt-12 z-10 md:w-1/3" style="background-color: #8e8e8e;"></div>
                     </div>
                     <div class="inner-lower px-6 md:pr-24 md:pl-12 lg:pl-32 lg:pr-40">
                       <img class="slide-image object-cover object-center w-full h-56 mb-4 md:h-56 md:mb-8 lg:h-64" src="{!! $item['image']['url'] !!}" alt="">
@@ -54,7 +54,7 @@
                         <h4 class="text-c-gray-400 font-brandon text-xl mb-2 uppercase md:leading-snug md:text-2xl lg:pr-0">{!! $item['header'] !!}</h4>
                         <p class="text-black text-base flex-grow">{!! $item['content'] !!}</p>
                         @if($item['logo'])
-                          <img class="mx-auto mt-8" src="{!! $item['logo']['url'] !!}" alt="">
+                          <img class="mx-auto mt-4 sm:w-2/3 md:w-2/3 lg:mt-4" src="{!! $item['logo']['url'] !!}" alt="">
                         @endif
                       </div>
                     </div>
