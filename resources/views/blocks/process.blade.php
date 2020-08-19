@@ -31,16 +31,16 @@
                     <div class="title flex items-center justify-center relative">
                       <h3 class="text-3xl inline-block font-chronicle bg-white px-8 py-6 relative z-40 transition duration-200 md:text-4xl lg:text-5xl lg:py-10">{!! $item['title'] !!}</h3>
                       <div class="circle -ml-1 relative">
-                        <svg class="h-16 w-16 overflow-visible fill-current text-white p-1 transition duration-200 relative z-20 lg:h-24 lg:w-24" viewBox="-2 -2 104 104" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="h-16 w-16 overflow-visible fill-current text-white transition duration-200 relative z-40 lg:h-24 lg:w-24" viewBox="-2 -2 104 104" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="50" cy="50" r="50" stroke="#8e8e8e" stroke-width="1" fill="fillCurrent" />
                         </svg>
                         @if($loop->first)
                           <div>
-                            <svg id="circle" class="h-16 w-16 absolute top-0 overflow-visible fill-current text-c-gray-300 z-40 p-1 lg:h-24 lg:w-24" viewBox="-2 -2 104 104" xmlns="http://www.w3.org/2000/svg">
+                            <svg id="circle" class="h-16 w-16 absolute top-0 overflow-visible bg-transparent fill-current text-c-gray-300 z-20 p-1 lg:h-24 lg:w-24" viewBox="-2 -2 104 104" xmlns="http://www.w3.org/2000/svg">
                               <circle cx="50" cy="50" r="50" stroke="#8e8e8e" stroke-width="1" fill="fillCurrent" />
-                              <circle cx="50" cy="50" r="8" stroke="#8e8e8e" stroke-width="1" fill="#8E8E8E" />
-                              <line id="circle-line-left" class="hidden text-c-gray-1000" x1="0" y1="51" x2="50" y2="51" stroke="#8E8E8E" stroke-width="1" fill="#8E8E8E"/>
-                              <line class="text-c-gray-1000" x1="50" y1="51" x2="100" y2="51" stroke="#8E8E8E" fill="#8E8E8E" stroke-width="1"/>
+                              {{-- <circle cx="50" cy="50" r="8" stroke="#8e8e8e" stroke-width="1" fill="#8E8E8E" /> --}}
+                              {{-- <line id="circle-line-left" class="hidden text-c-gray-1000" x1="0" y1="51" x2="50" y2="51" stroke="#8E8E8E" stroke-width="1" fill="#8E8E8E"/>
+                              <line class="text-c-gray-1000" x1="50" y1="51" x2="100" y2="51" stroke="#8E8E8E" fill="#8E8E8E" stroke-width="1"/> --}}
                             </svg>
                           </div>
                         @endif

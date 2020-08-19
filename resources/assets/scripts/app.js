@@ -223,9 +223,9 @@ if($('.process-carousel').length) {
 
 $('.process-carousel .flickity-prev-next-button').appendTo('.flickity-viewport');
 
-function update() {
+let tl;
 
-  const slides = document.querySelectorAll('.process-carousel .slide');
+const slides = document.querySelectorAll('.process-carousel .slide');
 
   var sW = gsap.getProperty(slides[0], "width");
 
@@ -237,8 +237,17 @@ function update() {
 
 if(window.matchMedia("(min-width: 1024px)").matches) {
   circle = sW * 4 - 96;
-  //console.log('true')
 }
+
+tl = gsap.fromTo('.process-carousel #slide-1 #circle', {x: 0, scale: 1}, {
+  x: circle,
+  scale: .5,
+  ease: "linear",
+  paused: true,
+})
+
+function update() {
+
   drag.on( 'scroll', function( progress ) {
     progress = Math.max( 0, Math.min( 1, progress ) );
     //console.log(progress);
@@ -248,15 +257,17 @@ if(window.matchMedia("(min-width: 1024px)").matches) {
     if(progress === 0) {
       $('.process-carousel #slide-1 #circle #circle-line-left').hide();
     }
-  
-    gsap.fromTo('.process-carousel #slide-1 #circle', {x: 0, scale: 1}, {
-      x: circle,
-      scale: .5,
-      ease: "linear",
-      paused: true,
-    }).progress(progress);
+    // console.log(progress)
+    tl.progress(progress);
   });
 }
+
+// drag.on( 'select', function( index ) {
+//   if(index == 1) {
+//     console.log('slide 2')
+//     tl.progress(0.229)
+//   }
+// });
 
 $(window).smartresize(function(e){
   if($('.process-carousel').length) {
@@ -304,8 +315,10 @@ gsap.fromTo('.split-video #video-link-line', {
 }, {
   scrollTrigger: {
     trigger: '.split-video h2',
+    endTrigger: '.split-video h2',
     start: "top 60%",
-    //markers: true,
+    end: "top 25%",
+    markers: true,
     scrub: 0.5,
   },
   xPercent: 0,

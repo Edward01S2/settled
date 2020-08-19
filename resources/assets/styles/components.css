@@ -55,7 +55,7 @@
     padding-left: calc((50vw - 640px) + 2rem);
   }
   .flickity-prev-next-button {
-    @apply bottom-0 top-auto rounded-none transform translate-y-0 h-auto w-auto bg-transparent mb-6;
+    @apply bottom-0 top-auto rounded-none transform translate-y-0 h-auto w-auto bg-c-black-100 mb-6;
     @screen md {
       @apply mb-12
     }
@@ -81,7 +81,10 @@
       }
     }
     .flickity-button-icon {
-      @apply relative inset-0 h-8 w-auto px-4 border-2 border-c-gray-100 text-c-gray-1000;
+      @apply relative inset-0 h-8 w-auto px-4 text-white;
+      @screen lg {
+        @apply py-2 h-12 px-8;
+      }
     }
   }
   .flickity-viewport {
@@ -152,7 +155,7 @@
     }
     .circle {
       svg {
-        @apply text-c-gray-300
+        @apply text-c-gray-300;
       }
     }
   }
@@ -201,6 +204,13 @@
         }
       }
     }
+    &.is-selected {
+      .circle {
+        svg {
+          @apply text-c-gray-300 bg-c-gray-300;
+        }
+      }
+    }
   }
   #slide-3 {
     .circle {
@@ -244,6 +254,9 @@
     .line-right {
       @apply hidden;
     }
+  }
+  #circle {
+    @apply bg-transparent;
   }
 }
 
