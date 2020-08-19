@@ -318,7 +318,7 @@ gsap.fromTo('.split-video #video-link-line', {
     endTrigger: '.split-video h2',
     start: "top 60%",
     end: "top 25%",
-    markers: true,
+    //markers: true,
     scrub: 0.5,
   },
   xPercent: 0,

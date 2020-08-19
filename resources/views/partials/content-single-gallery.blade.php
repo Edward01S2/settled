@@ -1,8 +1,14 @@
-<article class="bg-c-black-100">
-  <div class="container mx-auto px-6 py-6 lg:px-8 lg:pt-12">
+<article class="bg-c-black-100 relative">
+
+  <div class="container mx-auto px-6 py-6 lg:px-8 lg:pt-8">
+    <div class="absolute top-0 right-0 mr-6 mt-6 lg:mr-8 lg:mt-8">
+      <a href="/gallery" class="group">
+        <svg viewBox="0 0 20 20" fill="currentColor" class="text-white w-8 h-8 group-hover:opacity-50"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </a>
+    </div>
 
     <div class="md:flex">
-      <div class="hidden md:block md:order-1">
+      <div class="hidden md:block md:order-1 md:mt-12 lg:mt-16">
         @if($links['prev'])
           <a class="underline text-lg text-white lg:text-xl" href="{!! $links['prev'] !!}">Back</a>
         @else
@@ -10,7 +16,7 @@
         @endif
       </div>
 
-      <div class="hidden md:block md:order-3">
+      <div class="hidden md:block md:order-3 md:mt-12 lg:mt-16">
         @if($links['next'])
           <a class="underline text-lg text-white lg:text-xl" href="{!! $links['next'] !!}">Next</a>
         @else
