@@ -120,21 +120,23 @@ class Work extends Block
 
         $data = [];
 
-        foreach($galleries as $post) {
+        if($galleries) {
+            foreach($galleries as $post) {
 
-            $terms = get_the_terms($post->ID, 'class');
+                $terms = get_the_terms($post->ID, 'class');
 
-            $data[] = [
-                'image' => get_the_post_thumbnail_url($post->ID),
-                'url' => get_the_permalink($post->ID),
-                'title' => get_field('work title', $post->ID),
-                'terms' => [
-                    'name' => $terms[0]->name,
-                    'color' => get_field('Color', $terms[0]),
-                ],
+                $data[] = [
+                    'image' => get_the_post_thumbnail_url($post->ID),
+                    'url' => get_the_permalink($post->ID),
+                    'title' => get_field('work title', $post->ID),
+                    'terms' => [
+                        'name' => $terms[0]->name,
+                        'color' => get_field('Color', $terms[0]),
+                    ],
 
-            ];
-        };
+                ];
+            };
+        }
 
         return $data;
     }

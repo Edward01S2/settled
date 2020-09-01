@@ -80,6 +80,7 @@ class Partners extends Block
     public function with()
     {
         return [
+            'show' => get_field('show'),
             'title' => get_field('title'),
             'companies' => get_field('companies')
         ];
@@ -105,6 +106,7 @@ class Partners extends Block
         $partners = new FieldsBuilder('partners');
 
         $partners
+            ->addTrueFalse('show')
             ->addText('title')
             ->addRepeater('companies')
                 ->addImage('logo')

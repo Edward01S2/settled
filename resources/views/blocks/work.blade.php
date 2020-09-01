@@ -1,3 +1,4 @@
+@if($galleries)
 <section id="case-study" class="section xl:overflow-hidden">
   <div class="pt-12 pb-8 md:pb-4 lg:pb-12 lg:pt-16">
     <div class="">
@@ -36,3 +37,4 @@
     </div>
   </div>
 </section>
+@endif

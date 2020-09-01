@@ -80,6 +80,7 @@ class Process extends Block
     public function with()
     {
         return [
+            'pre' => get_field('pretitle'),
             'title' => get_field('title'),
             'logo' => get_field('title logo'),
             'items' => $this->items(),
@@ -106,6 +107,7 @@ class Process extends Block
         $process = new FieldsBuilder('process');
 
         $process
+            ->addText('pretitle')
             ->addText('title')
             ->addImage('title logo')
             ->addRepeater('items', [

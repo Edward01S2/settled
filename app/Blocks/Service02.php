@@ -87,6 +87,8 @@ class Service02 extends Block
             'content' => get_field('content'),
             'image' => get_field('image'),
             'subtext' => get_field('subtext'),
+            'sublink' => get_field('sublink'),
+            'sub' => get_field('sub'),
         ];
     }
 
@@ -117,8 +119,11 @@ class Service02 extends Block
                 ->addColorPicker('color')
             ->endRepeater()
             ->addWysiwyg('content')
+            ->addText('sub')
+            ->addLink('sublink')
             ->addImage('image')
             ->addWysiwyg('subtext');
+
 
         return $service02->build();
     }

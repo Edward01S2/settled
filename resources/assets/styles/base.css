@@ -97,7 +97,7 @@ nav {
   .nav-link {
     .nav-text {
       &:hover {
-        @apply;
+
       }
     }
   }

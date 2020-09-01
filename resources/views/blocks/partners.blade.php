@@ -1,3 +1,4 @@
+@if($show)
 <section>
   <div class="container mx-auto px-6 py-12 md:py-16 md:pb-32 lg:px-8">
     <div class="text-center">
@@ -15,3 +16,4 @@
     </div>
   </div>
 </section>
+@endif

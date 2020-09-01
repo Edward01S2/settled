@@ -80,6 +80,7 @@ class Galleries extends Block
     public function with()
     {
         return [
+            'show' => get_field('show'),
             'items' => $this->items(),
         ];
     }
@@ -104,6 +105,7 @@ class Galleries extends Block
         $galleries = new FieldsBuilder('galleries');
 
         $galleries
+            ->addTrueFalse('show')
             ->addText('content', [
                 'default_value' => 'Gallery Block',
                 'readonly' => 1,

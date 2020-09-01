@@ -3,11 +3,16 @@
     <div class="">
       <div class="overflow-hidden">
         <div class="title-container container mx-auto px-6 lg:px-8">
-          <div class="flex items-end mb-8 lg:mb-12">
-            <h2 class="title font-chronicle leading-none inline-block align-bottom text-xl md:text-3xl lg:text-5xl">{!! $title !!}</h2>
-            @if($logo)
-              <img class="ml-2 h-4 mb-1 md:h-7 lg:h-10 lg:ml-3 lg:mb-2" src="{!! $logo['url'] !!}" alt="">
-            @endif
+          @if($pre)
+            <div class="font-brandon text-c-gray-200 uppercase text-center mb-4 tracking-wider md:text-left md:text-lg md:mb-6 lg:mb-8">{!! $pre !!}</div>
+          @endif
+          <div class="mb-8 lg:mb-12">
+            <h2 class="title font-chronicle leading-none inline-block align-bottom text-center text-2xl md:text-3xl lg:text-5xl">
+              {!! $title !!}
+              @if($logo)
+                <img class="inline-block ml-2 h-5 mb-1 md:h-7 lg:h-10 lg:ml-3 lg:mb-2" src="{!! $logo['url'] !!}" alt="">
+              @endif
+            </h2>
           </div>
         </div>
       </div>

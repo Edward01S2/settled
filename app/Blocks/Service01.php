@@ -84,7 +84,7 @@ class Service01 extends Block
             'subtitle' => get_field('subtitle'),
             'content' => get_field('content'),
             'image' => get_field('image'),
-            'sublogo' => get_field('sublogo'),
+            'sublink' => get_field('sublink'),
             'subtext' => get_field('subtext'),
         ];
     }
@@ -113,8 +113,8 @@ class Service01 extends Block
             ->addText('subtitle')
             ->addWysiwyg('content')
             ->addImage('image')
-            ->addImage('sublogo')
-            ->addTextarea('subtext');
+            ->addText('subtext')
+            ->addLink('sublink');
 
         return $service01->build();
     }

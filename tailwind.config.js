@@ -47,6 +47,7 @@ module.exports = {
         'c-black' : {
           100: '#2F343B',
           200: '#282E33',
+          300: '#303339',
         },
         'c-teal' : {
           100: '#719FB6',
@@ -93,6 +94,8 @@ module.exports = {
         '3px': '3px',
         '18': '4.5rem',
         '44' : '11rem',
+        '80' : '22rem',
+        '84': '26rem',
         '100': '28rem',
         '104': '30rem',
         '108' : '32rem',
@@ -121,4 +124,5 @@ module.exports = {
     require('@tailwindcss/ui'),
     require('@tailwindcss/typography'),
   ],
+  applyComplexClasses: true,
 }

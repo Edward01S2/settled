@@ -10,9 +10,10 @@
       </div>
       <div class="md:w-1/2">
         <img class="object-cover object-center w-full h-auto" src="{!! $image['url'] !!}" alt="">
-        <div class="py-8 md:py-16 lg:py-20 xl:max-w-md">
-          <img class="h-8 mb-4" src="{!! $sublogo['url'] !!}" alt="">
-          <div class="leading-7 opacity-75 lg:text-lg xl:leading-9">{!! $subtext !!}</div>
+        <div class="py-8 xl:max-w-md">
+          {{-- <img class="h-8 mb-4" src="{!! $sublogo['url'] !!}" alt=""> --}}
+          <div class="leading-7 opacity-75 mb-4 lg:text-lg xl:leading-9">{!! $subtext !!}</div>
+          <a class="bg-c-black-300 inline-block uppercase text-white tracking-widest font-brandon px-8 py-3 text-lg hover:opacity-75" href="{!! $sublink['url'] !!}">{!! $sublink['title'] !!}</a>
         </div>
       </div>
     </div>   

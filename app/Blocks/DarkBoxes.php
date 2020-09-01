@@ -80,6 +80,7 @@ class DarkBoxes extends Block
     public function with()
     {
         return [
+            'show' => get_field('show'),
             'pre' => get_field('pretitle'),
             'items' => $this->items(),
             'count' => count(get_field('items')),
@@ -106,6 +107,7 @@ class DarkBoxes extends Block
         $darkBoxes = new FieldsBuilder('dark_boxes');
 
         $darkBoxes
+            ->addTrueFalse('show')
             ->addText('pretitle')
             ->addRepeater('items', [
                 'layout' => 'block'
