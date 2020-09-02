@@ -16,13 +16,19 @@
         <div class="mb-8 leading-7 opacity-75 lg:text-lg xl:leading-9">
           {!! $content !!}
         </div>
-        <div class="leading-7 opacity-75 mb-4 lg:text-lg xl:leading-9">{!! $sub !!}</div>
-        <a class="bg-c-black-300 inline-block uppercase text-white tracking-widest font-brandon px-8 py-3 text-lg mb-8 hover:opacity-75" href="{!! $sublink['url'] !!}">{!! $sublink['title'] !!}</a>
+        <div class="hidden md:block">
+          <div class="leading-7 opacity-75 mb-4 lg:text-lg">{!! $sub !!}</div>
+          <a class="bg-c-blue-200 inline-block uppercase text-white tracking-widest font-brandon px-8 py-3 text-lg mb-8 hover:opacity-75" href="{!! $sublink['url'] !!}">{!! $sublink['title'] !!}</a>
+        </div>
       </div>
       <div class="flex flex-col md:block md:w-1/2 md:order-1">
         <img class="object-cover object-center w-full h-auto order-2 mb-4 md:mb-12" src="{!! $image['url'] !!}" alt="">
         <div class="mb-8 md:mb-0">
           <div class="service-content opacity-75 order-1 leading-7 lg:text-lg xl:leading-9">{!! $subtext !!}</div>
+          <div class="mt-8 md:hidden">
+            <div class="leading-7 opacity-75 mb-4 lg:text-lg">{!! $sub !!}</div>
+            <a class="bg-c-blue-200 inline-block uppercase text-white tracking-widest font-brandon px-8 py-3 text-lg mb-8 hover:opacity-75" href="{!! $sublink['url'] !!}">{!! $sublink['title'] !!}</a>
+          </div>
         </div>
       </div>
     </div>
