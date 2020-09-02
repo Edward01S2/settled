@@ -9,7 +9,7 @@
         </div>
         <div class="my-8 md:hidden">
           <div class="leading-7 opacity-75 mb-4 lg:text-lg">{!! $subtext !!}</div>
-          <a class="bg-c-teal-200 inline-block uppercase text-white tracking-widest font-brandon px-8 py-3 text-lg hover:opacity-75" href="{!! $sublink['url'] !!}">{!! $sublink['title'] !!}</a>
+          <a class="bg-c-teal-200 inline-block uppercase text-white tracking-widest font-brandon px-8 py-3 text-xl hover:opacity-75" href="{!! $sublink['url'] !!}">{!! $sublink['title'] !!}</a>
         </div>
       </div>
       <div class="md:w-1/2">
@@ -18,7 +18,7 @@
           {{-- <img class="h-8 mb-4" src="{!! $sublogo['url'] !!}" alt=""> --}}
           <div class="hidden md:block">
             <div class="leading-7 opacity-75 mb-4 lg:text-lg">{!! $subtext !!}</div>
-            <a class="bg-c-teal-200 inline-block uppercase text-white tracking-widest font-brandon px-8 py-3 text-lg hover:opacity-75" href="{!! $sublink['url'] !!}">{!! $sublink['title'] !!}</a>
+            <a class="bg-c-teal-200 inline-block uppercase text-white tracking-widest font-brandon px-8 py-3 text-xl hover:opacity-75" href="{!! $sublink['url'] !!}">{!! $sublink['title'] !!}</a>
           </div>
         </div>
       </div>
