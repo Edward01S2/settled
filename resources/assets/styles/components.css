@@ -125,6 +125,9 @@
       }
       h3 {
         @apply hidden;
+        @screen md {
+          @apply invisible block;
+        }
       }
       p {
         @apply text-white;
@@ -145,18 +148,18 @@
         @apply w-1/2;
       }
       .title {
-        @screen md {
+        /* @screen md {
           @apply pb-2;
-        }
+        } */
       }
       .slide-image {
-        @apply object-contain w-full h-84;
-        @screen md  {
+        @apply object-contain w-full;
+        /* @screen md  {
           height: 20rem;
         }
         @screen lg {
           height: 24rem;
-        }
+        } */
       }
       .inner-lower {
         @apply px-12;
