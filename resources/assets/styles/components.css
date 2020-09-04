@@ -150,12 +150,12 @@
         }
       }
       .slide-image {
-        @apply object-contain w-full h-100;
+        @apply object-contain w-full h-84;
         @screen md  {
-          @apply h-80;
+          height: 20rem;
         }
         @screen lg {
-          @apply h-84;
+          height: 24rem;
         }
       }
       .inner-lower {
@@ -608,6 +608,15 @@
 #block_5f2abc83dd46a {
   .flickity-prev-next-button {
     @apply hidden;
+  }
+}
+
+#block_5f4d5dc4bbc6e {
+  h2 {
+    @apply font-brandon uppercase text-2xl leading-tight tracking-wider;
+    @screen lg {
+      @apply text-3xl;
+    }
   }
 }
 
