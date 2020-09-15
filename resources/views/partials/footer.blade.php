@@ -28,7 +28,7 @@
         @if($social)
           <div class="flex items-center space-x-8 pt-4 pb-8 justify-center md:pb-12 lg:py-0 lg:items-start lg:justify-start lg:w-1/3">
             @foreach($social as $item)
-              <a class="hover:opacity-50" href="{!! $item['link']['url'] !!}" target="_blank">
+              <a class="hover:opacity-50" href="{!! $item['url'] !!}" target="_blank">
                 <img class="h-8 lg:h-6" src="{!! $item['icon']['url'] !!}" alt="">
                 {!! $item['link']['title'] !!}
               </a>
