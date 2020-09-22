@@ -543,7 +543,7 @@
         @apply mt-3;
       }
       li {
-        @apply flex items-start;
+        @apply flex items-start whitespace-no-wrap;
         text-indent: -1rem;
         /* list-style-image: url('../images/circle.svg'); */
         &:before {
@@ -567,7 +567,7 @@
         @apply mt-3;
       }
       li {
-        @apply flex items-start;
+        @apply flex items-start whitespace-no-wrap;
         text-indent: -1rem;
         /* list-style-image: url('../images/circle.svg'); */
         &:before {
